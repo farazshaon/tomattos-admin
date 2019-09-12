@@ -1,0 +1,356 @@
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
+
+<div id="header"></div>
+
+    <div class="content">
+        <!-- Start Content-->
+        <div class="container-fluid">
+          <h3>Create  <span class="text-color">Invoice</span></h3>
+          <div class="line main-bg"></div>
+
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="header-title mb-3">Invoice</h4>
+                <div id="basicwizard">
+                    <ul class="nav nav-pills bg-light nav-justified form-wizard-header mb-4">
+                        <li class="nav-item">
+                            <a href="#basictab1" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active show">
+                                <i class="mdi mdi-face-profile mr-1"></i>
+                                <span class="d-none d-sm-inline">Summary</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#basictab2" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                <i class="mdi mdi-face-profile mr-1"></i>
+                                <span class="d-none d-sm-inline">Add Payment</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#basictab3" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                <i class="mdi mdi-face-profile mr-1"></i>
+                                <span class="d-none d-sm-inline">Option</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#basictab4" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                <i class="mdi mdi-face-profile mr-1"></i>
+                                <span class="d-none d-sm-inline">Credit</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#basictab5" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                <i class="mdi mdi-face-profile mr-1"></i>
+                                <span class="d-none d-sm-inline">Refund</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#basictab6" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                <i class="mdi mdi-face-profile mr-1"></i>
+                                <span class="d-none d-sm-inline">Notes</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content b-0 mb-0">
+                        <div class="tab-pane active show" id="basictab1">
+                           <div class="row">
+                              <h2>Invoice Field Null</h2>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="basictab2">
+                            <form action="#" method="post" class="parsley-examples" novalidate="">
+                                <input type="hidden" name="_token" value="PRuKZ6MxxNmDzvhMsP1vgZBuubvoh7ybNVZR0Lkt">
+                                <div class="row">
+                                <div class="col-6">
+                                  <div class="form-group row">
+                                      <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Date</label>
+                                      <div class="col-6">
+                                          <input type="text" id="range-datepicker" class="form-control flatpickr-input active" placeholder="2018-10-03 to 2018-10-10" readonly="readonly">
+                                      </div>
+                                  </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Payment Method</label>
+                                        <div class="col-6">
+                                          <select id="heard" class="form-control" required="">
+                                              <option value="">Choose..</option>
+                                              <option value="press">Press</option>
+                                              <option value="net">Internet</option>
+                                              <option value="mouth">Word of mouth</option>
+                                              <option value="other">Other..</option>
+                                          </select>
+                                        </div>
+                                    </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Transaction ID</label>
+                                            <div class="col-6">
+                                                <input type="text" name="transactionId" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Transaction Id" placeholder="Transaction Id">
+                                            </div>
+                                        </div>
+                                </div><!-- end col -->
+                                <div class="col-6">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Amount</label>
+                                        <div class="col-6">
+                                            <input type="text" name="amount" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Amount" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Transaction Fees</label>
+                                        <div class="col-6">
+                                            <input type="text" name="transactionFee" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Transaction Fees" placeholder="0.00">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Send Email</label>
+                                        <div class="col-6">
+                                          <div class="checkbox checkbox-purple mt-1">
+                                               <input id="checkbox6a" type="checkbox" data-parsley-multiple="checkbox6a">
+                                               <label for="checkbox6a">
+                                                Tick To Send Confirmation Email
+                                               </label>
+                                           </div>
+                                        </div>
+                                        <input type="hidden" name="id" value="4">
+                                        <input type="hidden" name="email" value="zabbirhossain720@gmail.com">
+                                    </div>
+                                </div>
+
+                            </div> <!-- end row -->
+                            <div style="text-align: center;">
+                                <button class="btn btn-success" type="submit">Add Payment</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="tab-pane" id="basictab3">
+                            <form action="#" method="post" class="parsley-examples" novalidate="">
+                                <input type="hidden" name="_token" value="PRuKZ6MxxNmDzvhMsP1vgZBuubvoh7ybNVZR0Lkt">
+                                  <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Invoice Date</label>
+                                            <div class="col-6">
+                                                <input type="Date" name="transDate" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Invoice Date" placeholder="Invoice Date">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Payment Method</label>
+                                            <div class="col-6">
+                                              <select id="heard" class="form-control" required="">
+                                                  <option value="">Choose..</option>
+                                                  <option value="press">Press</option>
+                                                  <option value="net">Internet</option>
+                                                  <option value="mouth">Word of mouth</option>
+                                                  <option value="other">Other..</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Invoice Number</label>
+                                                <div class="col-6">
+                                                    <input type="text" name="invoiceNumber" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Invoice Number" placeholder="Invoice Number">
+                                                </div>
+                                            </div>
+                                    </div><!-- end col -->
+                                    <div class="col-6">
+                                        <div class="form-group row">
+                                                <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Due Date</label>
+                                                <div class="col-6">
+                                                    <input type="Date" name="dueDate" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Due Date" placeholder="Due Date">
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Tax Rate</label>
+                                            <div class="col-6">
+                                                <input type="text" name="taxRate" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Tax Rate" placeholder="0.00 % ">
+                                                <input type="hidden" name="id" value="4">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Status</label>
+                                            <div class="col-6">
+                                              <select id="heard" class="form-control" required="">
+                                                <option value="1">Paid</option>
+                                                <option value="2">UnPaid</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- end row -->
+                                <div style="text-align: center;">
+                                    <button class="btn btn-success" type="submit">Add Invoice</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="basictab4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text-center">
+                                        <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                        <h3 class="mt-0">Thank you !</h3>
+
+                                        <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam
+                                            mattis dictum aliquet.</p>
+
+                                        <div class="mb-3">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">I agree with the Terms and Conditions</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+                        </div>
+                        <div class="tab-pane" id="basictab5">
+                            <form action="#" method="post" class="parsley-examples" novalidate="">
+                                <input type="hidden" name="_token" value="PRuKZ6MxxNmDzvhMsP1vgZBuubvoh7ybNVZR0Lkt">
+                                <div class="row">
+                                <div class="col-4">
+                                </div>
+                               <div class="col-8">
+
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Tranactions</label>
+                                        <div class="col-6">
+                                          <select id="heard" class="form-control" required="">
+                                            <option value="1">Paid</option>
+                                            <option value="2">UnPaid</option>
+                                          </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Amount</label>
+                                        <div class="col-6">
+                                            <span>
+                                                <input type="text" name="amount" class="form-control parsley-validated" required="" data-parsley-required-message="Please Enter Amount" placeholder="Amount">
+                                            </span>
+                                            <span style="margin-left: 5px;">
+                                                Leave Blank For full refund
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Refund Type</label>
+                                        <div class="col-6">
+                                           <div class="form-group row">
+                                                 <select id="heard" class="form-control" required="">
+                                                    <option value="1">Refund Through Gateway(If Support By Module)</option>
+                                                    <option value="2">Manual Refund processed Externally</option>
+                                                    <option value="3">Add to Client credit Balance</option>
+                                                 </select>
+
+                                           </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Reverse Payment</label>
+                                        <div class="col-6">
+                                          <div class="checkbox checkbox-purple mt-1">
+                                            <input id="checkbox6a" type="checkbox" data-parsley-multiple="checkbox6a">
+                                            <label for="checkbox6a">
+                                                Undo automated actions triggered by this transaction -where possible.
+                                            </label>
+                                          </div>
+
+                                        <input type="hidden" name="id" value="4">
+                                        <input type="hidden" name="email" value="zabbirhossain720@gmail.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-6 col-form-label" style="text-align: right;">Send Email</label>
+                                        <div class="col-6">
+                                          <div class="checkbox checkbox-purple mt-1">
+                                            <input id="checkbox6" type="checkbox" data-parsley-multiple="checkbox6">
+                                            <label for="checkbox6">
+                                                Tick to Send Confirmation Email
+                                            </label>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    <div style="text-align: center;">
+                                        <button class="btn btn-success" type="submit">Refund</button>
+                                    </div>
+
+                                </div><!-- end col -->
+                            </div> <!-- end row -->
+                        </form>
+                        </div>
+                        <div class="tab-pane" id="basictab6">
+                            <form action="#" method="post" class="parsley-examples" novalidate="">
+                                <input type="hidden" name="_token" value="PRuKZ6MxxNmDzvhMsP1vgZBuubvoh7ybNVZR0Lkt">
+                               <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                       <textarea class="form-control" id="example-textarea" rows="5" name="note"></textarea>
+                                       <input type="hidden" name="id" value="4">
+                                    </div>
+
+                                    <div style="text-align: center;">
+                                        <button class="btn btn-success" type="submit">Save Changes</button>
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+                            </form>
+                        </div>
+                        <ul class="list-inline wizard mb-0">
+                            <li class="previous list-inline-item disabled">
+                                <a href="javascript: void(0);" class="btn btn-secondary">Previous</a>
+                            </li>
+                            <li class="next list-inline-item float-right">
+                                <a href="javascript: void(0);" class="btn btn-secondary">Next</a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- tab-content -->
+                </div> <!-- end #basicwizard-->
+
+                <!--SHOW TRANSACTION-->
+                            <div class="table-responsive" style="margin-top: 1%">
+                                <table class="table mb-0" id="">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th width="10%" style="text-align: center;">Date</th>
+                                        <th width="20%" style="text-align: center;">Payment Method </th>
+                                        <th width="10%" style="text-align: center;">Transaction Id</th>
+                                        <th width="20%" style="text-align: center;">Amount</th>
+                                        <th width="20%" style="text-align: center;">Transaction Fees</th>
+                                        <th width="20%" style="text-align: center;">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div id="paginationLink">
+
+                                </div>
+
+                            </div> <!-- end table-responsive-->
+
+                          <!--SHOW TRANSACTION-->
+
+                        </div> <!-- end card-body -->
+                    </div>
+                  </div>
+            </div>
+        </div>
+  <div id="footer"></div>

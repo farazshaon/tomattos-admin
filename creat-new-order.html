@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>UBold - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Plugins css -->
+        <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                            <span class="pro-user-name ml-1">
+                                Geneva <i class="mdi mdi-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-user"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-settings"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-lock"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="fe-log-out"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="assets/images/Tomattos.png" alt="" height="30">
+                            <!-- <span class="logo-lg-text-light">UBold</span> -->
+                        </span>
+                        <span class="logo-sm">
+                            <!-- <span class="logo-sm-text-dark">U</span> -->
+                            <img src="assets/images/Tomattos.png" alt="" height="16">
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                    <li>
+                        <button class="button-menu-mobile waves-effect waves-light">
+                            <i class="fe-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- end Topbar -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                <div class="slimscroll-menu">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+
+                        <ul class="metismenu" id="side-menu">
+
+                            <li class="menu-title">Admin</li>
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <i class="fe-airplay"></i>
+                                    <span class="badge badge-success badge-pill float-right"></span>
+                                    <span> Dashboards </span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="index.html">Dashboard 1</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <i class="fe-users"></i>
+                                    <span> Clients  </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="crm-dashboard.html">View/Search Client</a>
+                                    </li>
+                                    <li>
+                                        <a href="crm-contacts.html">Add New Client</a>
+                                    </li>
+
+                                    <li>
+                                      <a href="javascript: void(0);">
+                                        <span> Client Info  </span>
+                                        <span class="menu-arrow"></span>
+                                    </a>
+
+                                    <ul>
+                                      <li>
+                                          <a href="crm-opportunities.html">Summary</a>
+                                      </li>
+
+                                      <li>
+                                        <a href="javascript: void(0);">
+                                          <span> Product/Services</span>
+                                          <span class="menu-arrow"></span>
+                                      </a>
+                                      <ul>
+                                        <li>
+                                            <a href="crm-opportunities.html">Create New Product</a>
+                                            <a href="crm-opportunities.html">Show All Product</a>
+                                            <a href="crm-opportunities.html">Create New Group</a>
+                                            <a href="crm-opportunities.html">Show All Group</a>
+
+                                        </li>
+                                      </ul>
+                                      </li>
+                                      <li>
+                                          <a href="crm-opportunities.html">Invoice</a>
+                                      </li>
+                                      <li>
+                                          <a href="crm-opportunities.html">Transactions</a>
+                                      </li>
+                                      <li>
+                                          <a href="crm-opportunities.html">Tickets</a>
+                                      </li>
+                                      <li>
+                                          <a href="crm-opportunities.html">Emails</a>
+                                      </li>
+                                      <li>
+                                          <a href="crm-opportunities.html">Notes</a>
+                                      </li>
+                                      <li>
+                                          <a href="crm-opportunities.html">Log</a>
+                                      </li>
+                                    </ul>
+
+                                  </li>
+
+                                    <li>
+                                        <a href="crm-leads.html">Cancellation Request</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <!-- <li>
+                                <a href="javascript: void(0);">
+                                    <i class="fe-shopping-cart"></i>
+                                    <span> eCommerce </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="ecommerce-dashboard.html">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce-products.html">Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce-prduct-detail.html">Product Detail</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce-product-edit.html">Product Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce-orders.html">Orders</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce-sellers.html">Sellers</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+
+                        </ul>
+
+                    </div>
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                      <h3>Create New <span class="text-color">Order</span></h3>
+                      <div class="line main-bg"></div>
+                        <form method="post" action="http://isp.tomattos.net/admin/save-order">
+                      <input type="hidden" name="_token" value="tyazclSWEjf8aF7AyXs9476b7kRiX9w1qeFWWsxl">
+
+                          <div class="row" style="margin-top: 3%;">
+                          <div class="col-sm-8">
+                            <div class="box-1">
+                              <h5>Add New Order</h5>
+                                <div class="card-box">
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Client<span class="text-danger">*</span></label>
+                                            <div class="col-7">
+                                              <select class="form-control parsley-validated" data-style="btn-secondary" name="clientId">
+
+                                                  <option value="3">sdf</option>
+
+                                                  <option value="4">zabbir</option>
+
+                                                  <option value="5">zabbir</option>
+
+                                                  <option value="6">zabbir</option>
+                                                                              </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Payment Method<span class="text-danger">*</span></label>
+                                            <div class="col-7">
+                                              <select class="form-control parsley-validated" data-style="btn-secondary" name="paymentId">
+
+                                                  <option value="2">Bank</option>
+
+                                                  <option value="3">Card</option>
+
+                                                  <option value="8">Bkash</option>
+                                                                              </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Promotion Code<span class="text-danger">*</span></label>
+                                            <div class="col-5">
+                                              <span>
+                                              <select class="form-control parsley-validated" data-style="btn-secondary" name="promoCodeId">
+                                                <option value="">Select Code</option>
+
+                                                  <option value="2">0507120556731943</option>
+                                                                              </select>
+                                                </span>
+
+                                            </div>
+                                            <div class="col-3">
+                                              <span>
+                                                <a href="creat-promo-code.html">
+                                                  <button type="button" class="btn btn-outline-info waves-effect waves-light">Create Custom Promo</button>
+                                                  </a>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Order Status<span class="text-danger">*</span></label>
+                                            <div class="col-5">
+                                              <span>
+                                              <select class="form-control parsley-validated" data-style="btn-secondary" name="orderStatus">
+                                                <option value="1">Pending</option>
+                                                  <option value="2">Active</option>
+                                                </select>
+                                                </span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;"></label>
+
+                                            <div class="col-7">
+                                              <span>
+                                                 <input type="checkbox" name="orderConfirmStatus" value="1" checked="">
+                                                </span>
+                                                <span style="">
+                                                   Order Confirmation
+                                                </span>
+
+                                                <span style="margin-left: 10px;">
+                                                 <input type="checkbox" name="orderConfirmStatus" value="2">
+                                                </span>
+                                                <span style="">
+                                                   Generate Invoice
+                                                </span>
+
+                                                <span style="margin-left: 10px;">
+                                                 <input type="checkbox" name="orderConfirmStatus" value="3">
+                                                </span>
+                                                <span style="">
+                                                   Send Email
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                              <div class="box-1 mt-2">
+                                <h5>Product/Service</h5>
+                                <div class="card-box">
+                                  <div class="form-group row">
+                                          <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Product/Service<span class="text-danger">*</span></label>
+                                          <div class="col-5">
+                                            <!-- <span>
+                                            <select class="form-control parsley-validated" data-style="btn-secondary" id="product" name="product">
+                                              <option value="">Select</option> -->
+
+
+                                                   <input type="checkbox" name="product[]" value="1" id="product">test product1
+
+
+                                                   <input type="checkbox" name="product[]" value="2" id="product">test product2
+
+
+                                                   <input type="checkbox" name="product[]" value="3" id="product">test product3
+                                                                            <!--   </select> -->
+
+
+                                          </div>
+                                      </div>
+
+                                    <div class="form-group row">
+                                          <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Billing Cycle<span class="text-danger">*</span></label>
+                                          <div class="col-5">
+                                            <span>
+                                            <select class="form-control parsley-validated" data-style="btn-secondary" name="billingCycle[]">
+                                              <option value="1">One Time</option>
+                                                  <option value="2">Quarterly</option>
+                                                  <option value="3">Semi-Annually</option>
+                                                  <option value="4">Annually</option>
+                                                  <option value="5">Biennially</option>
+                                                  <option value="6">Triennially</option>
+                                              </select>
+                                              </span>
+
+                                          </div>
+                                      </div>
+
+
+                                      <div class="form-group row">
+                                          <label for="inputEmail3" class="col-4 col-form-label" style="text-align: right;">Price Override<span class="text-danger">*</span></label>
+                                          <div class="col-7">
+                                            <span>
+                                            <input type="text" name="priceOverride" size="8" readonly="">
+                                              </span>
+                                              <span>
+                                                (Only enter to manually override default product pricing)
+                                              </span>
+
+                                          </div>
+                                      </div>
+
+                                  </div>
+                              </div>
+
+                              <div>
+
+                              </div>
+                              <div class="row">
+                              <div class="col-sm-6">
+                                <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mt-3" id="anotherOrderButton">Add Another Product</button>
+                              </div>
+                              <div class="col-sm-6">
+                                <button type="submit" class="btn btn-success btn-rounded waves-effect waves-light mt-3">Submit Order</button>
+                              </div>
+                          </div>
+
+                          </div>
+                          <div class="col-sm-4">
+                                <div class="card-box ribbon-box">
+                                    <div class="ribbon ribbon-success float-right"><i class="mdi mdi-access-point mr-1"></i> Order Summary</div>
+                                    <h5 class="text-success float-left mt-0">Order Summary</h5>
+                                    <div class="ribbon-content">
+                                      <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Sub Total: </li>
+                                      </ul>
+                                      <div class="card-body">
+                                         <div id="showTotalAmount"><br><br><span>Total Cost</span><br> <input type="text" readonly="" id="totalAmount" name="totalAmount" value="NaN" class="form-control mb-2"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+                      </form>
+                  </div>
+                </div>
+
+<!-- Footer Start -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                  2015 - 2018 &copy;Developed  by <a href="" class="text-color">Tomattos</a>
+            </div>
+            <div class="col-md-6">
+                <div class="text-md-right footer-links d-none d-sm-block">
+                    <a href="javascript:void(0);">About Us</a>
+                    <a href="javascript:void(0);">Help</a>
+                    <a href="javascript:void(0);">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end Footer -->
+
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0 text-white">Settings</h5>
+            </div>
+            <div class="slimscroll-menu">
+                <!-- User box -->
+                <div class="user-box">
+                    <div class="user-img">
+                        <img src="assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                    </div>
+
+                    <h5><a href="javascript: void(0);">Geneva Kennedy</a> </h5>
+                    <p class="text-muted mb-0"><small>Admin Head</small></p>
+                </div>
+
+                <!-- Settings -->
+                <hr class="mt-0" />
+                <h5 class="pl-3">Basic Settings</h5>
+                <hr class="mb-0" />
+
+                <div class="p-3">
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox1" type="checkbox" checked>
+                        <label for="Rcheckbox1">
+                            Notifications
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox2" type="checkbox" checked>
+                        <label for="Rcheckbox2">
+                            API Access
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox3" type="checkbox">
+                        <label for="Rcheckbox3">
+                            Auto Updates
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox4" type="checkbox" checked>
+                        <label for="Rcheckbox4">
+                            Online Status
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-0">
+                        <input id="Rcheckbox5" type="checkbox" checked>
+                        <label for="Rcheckbox5">
+                            Auto Payout
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <hr class="mt-0" />
+                <h5 class="pl-3 pr-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+                <hr class="mb-0" />
+                <div class="p-3">
+                    <div class="inbox-widget">
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
+                            <p class="inbox-item-text">I've finished it! See you so...</p>
+                        </div>
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
+                            <p class="inbox-item-text">This theme is awesome!</p>
+                        </div>
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
+                            <p class="inbox-item-text">Nice to meet you</p>
+                        </div>
+
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
+                            <p class="inbox-item-text">Hey! there I'm available...</p>
+                        </div>
+                        <div class="inbox-item">
+                            <div class="inbox-item-img"><img src="assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
+                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
+                            <p class="inbox-item-text">This theme is awesome!</p>
+                        </div>
+                    </div> <!-- end inbox-widget -->
+                </div> <!-- end .p-3-->
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Plugins js-->
+        <script src="assets/libs/jquery-nice-select/jquery.nice-select.min.js"></script>
+        <script src="assets/libs/switchery/switchery.min.js"></script>
+        <script src="assets/libs/multiselect/jquery.multi-select.js"></script>
+        <script src="assets/libs/select2/select2.min.js"></script>
+        <script src="assets/libs/jquery-mockjax/jquery.mockjax.min.js"></script>
+        <script src="assets/libs/autocomplete/jquery.autocomplete.min.js"></script>
+        <script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script>
+        <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Plugin js-->
+        <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+
+        <!-- Validation init js-->
+        <script src="assets/js/pages/form-validation.init.js"></script>
+        <!-- Dashboar 1 init js-->
+        <script src="assets/js/pages/dashboard-1.init.js"></script>
+
+        <!-- App js-->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+</html>
